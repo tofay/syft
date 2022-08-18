@@ -59,7 +59,6 @@ func ImageCatalogers(cfg Config) []Cataloger {
 		golang.NewGoModuleBinaryCataloger(),
 		dotnet.NewDotnetDepsCataloger(),
 		portage.NewPortageCataloger(),
-		sbom.NewSBOMCataloger(),
 	}, cfg.Catalogers)
 }
 
